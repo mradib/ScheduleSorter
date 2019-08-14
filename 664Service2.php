@@ -10,8 +10,8 @@ $num2 = $_POST['num2'];
 $class = $_POST['class'];
 
 function add ($num1, $num2, $class, $db){
-$sql = "INSERT INTO routine664 (Subject) VALUES (`$class`) WHERE (Period = `$num1` && Day = `$num2`)";
-$db->exec($sql);
+$sql3 = "INSERT INTO routine664 (Subject) VALUES (`$class`) WHERE (Period = `$num1` && Day = `$num2`)";
+$db->exec($sql3);
 }
 function remove ($num1, $num2, $db){
 $sql = "INSERT INTO routine664 (Subject) VALUES ('0') WHERE (Period = `$num1` && Day = `$num2`)";
